@@ -128,7 +128,7 @@ extractData();
     const pressure = <?php echo json_encode(intval($data[0]['pressure'])); ?>;  
     const altitude = <?php echo json_encode(intval($data[0]['altitude'])); ?>;
     const date=new Date();
-    mapboxgl.accessToken='pk.eyJ1IjoiZGl6ZHVkZSIsImEiOiJjbGY3aXgyangwMThoM3JwYXl4Zm0xbHVtIn0.Ur6xxsAEae271nED4B8JOA';
+    mapboxgl.accessToken='YOUR KEY';
     const latitude=<?php echo number_format(floatval($data[0]['latitude']),6); ?>,
     longitude=<?php echo number_format(floatval($data[0]['longitude']),6); ?>,
     sunPosition=SunCalc.getPosition(date,latitude,longitude),
